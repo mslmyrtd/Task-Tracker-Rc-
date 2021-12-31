@@ -63,6 +63,7 @@ export const TasksDiv = styled.div`
   align-items: center;
 `;
 export const TaskDiv = styled.div`
+  border-left: 9px solid purple;
   background: white;
   width: 280px;
   padding: 0.5rem 0.5rem 0 0.5rem;
