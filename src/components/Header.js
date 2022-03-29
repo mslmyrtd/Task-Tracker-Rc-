@@ -1,11 +1,14 @@
-
+import Button from "./Button";
 
 const Header = () => {
+    const handleClick=()=>{
+    }
   return (
-    <header>
-        <h1>Task Tracker</h1>
+    <header className="header">
+      <h1>Task Tracker</h1>
+      <Button color="purple" text="Show Add Task Bar" handleClick={handleClick}/>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
