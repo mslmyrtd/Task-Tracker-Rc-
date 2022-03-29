@@ -30,7 +30,7 @@ const AddTask = ({ addTask }) => {
         <input
           id="day"
           name="day"
-          type="text"
+          type="datetime-local"
           placeholder="Add Day & Time"
           required
           value={day}
