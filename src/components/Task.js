@@ -2,7 +2,7 @@ import { FaCalendarTimes} from "react-icons/fa";
 
 const Task = ({ task, deleteTask, toggleDone }) => {
   return (
-    <div className="task">
+    <div className={`task ${task.isDone ? "done":""}`} onDoubleClick={()=>toggleDone(task.id) }>
       <h3>
         {task.text}{" "}
         <FaCalendarTimes

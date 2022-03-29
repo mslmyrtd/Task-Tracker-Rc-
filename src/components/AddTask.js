@@ -9,8 +9,6 @@ const AddTask = ({ addTask }) => {
     addTask({ text, day, isDone: false });
     setText("");
     setDay("");
-    // console.log(text);
-    // console.log(day);
   };
 
   return (

@@ -28,12 +28,24 @@ function App() {
   const deleteTask=(deletedTaskId)=>{
     setTasks(tasks.filter((task)=>task.id !==deletedTaskId))
   }
+  //Add Task
+  const addTask=(newTask)=>{
+    const id=Math.floor(Math.random()*100)+1;
+    const addNewTask={id, ...newTask}
+    setTasks([...tasks,addNewTask])
+  }
+  //ToggleDone
+  const toggleDone=(toggleDoneId)=>{
+    setTasks(
+      tasks.map((task)=>task.id===toggleDoneId ? {...task, isDone: !task.isDone}:task)
+    )
+  }
   
   return (
     <div className="container">
       <Header title="Task Tracker" />
-      <AddTask/>
-      <Tasks tasks={tasks} deleteTask={deleteTask} />
+      <AddTask addTask={addTask}/>
+      <Tasks tasks={tasks} deleteTask={deleteTask}  toggleDone={toggleDone}/>
       
     </div>
   );
