@@ -2,7 +2,7 @@ import Task from "./Task";
 
 
 const Tasks = ({tasks,deleteTask}) => {
-    console.log(tasks);
+
   return (
     <div>
      {

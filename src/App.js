@@ -1,13 +1,8 @@
-
-
 import { useState } from "react";
 import "./App.css";
-
-
+import AddTask from "./components/AddTask";
 import Header from "./components/Header";
-
 import Tasks from "./components/Tasks";
-
 function App() {
   const [tasks, setTasks] = useState([
     {
@@ -31,11 +26,13 @@ function App() {
   ]);
   //Delete
   const deleteTask=(deletedTaskId)=>{
-    console.log("deleted", deletedTaskId);
+    setTasks(tasks.filter((task)=>task.id !==deletedTaskId))
   }
+  
   return (
     <div className="container">
       <Header title="Task Tracker" />
+      <AddTask/>
       <Tasks tasks={tasks} deleteTask={deleteTask} />
       
     </div>

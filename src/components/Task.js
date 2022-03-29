@@ -1,14 +1,17 @@
-import { FaTimesCircle } from "react-icons/fa";
+import { FaCalendarTimes} from "react-icons/fa";
 
 const Task = ({ task, deleteTask, toggleDone }) => {
   return (
     <div className="task">
-        <h3>{task.text} <FaTimesCircle style={{color:"red"}} onClick={()=>deleteTask(task.id)}/> </h3>
-        <p>{task.day}</p>
-
+      <h3>
+        {task.text}{" "}
+        <FaCalendarTimes
+          style={{ color: "red" }}
+          onClick={() => deleteTask(task.id)}
+        />
+      </h3>
+      <p>{task.day}</p>
     </div>
-    
-    
   );
 };
 
