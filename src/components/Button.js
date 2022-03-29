@@ -1,13 +1,19 @@
 import React from 'react'
 
-const Button = ({handleClick,color, text}) => {
+const Button = ({toggleShow ,color, text}) => {
         
     
   return (
     <div>
-        <button className='btn' onClick={handleClick}  style={{backgroundColor:color}} >{text}</button>
+      <button
+        className="btn"
+        onClick={toggleShow}
+        style={{ backgroundColor: color }}
+      >
+        {text}
+      </button>
     </div>
-  )
+  );
 }
 
 export default Button

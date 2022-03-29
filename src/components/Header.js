@@ -1,12 +1,11 @@
 import Button from "./Button";
 
-const Header = () => {
-    const handleClick=()=>{
-    }
+const Header = ({title,toggleShow, showTask}) => {
+  
   return (
     <header className="header">
       <h1>Task Tracker</h1>
-      <Button color="purple" text="Show Add Task Bar" handleClick={handleClick}/>
+      <Button color={showTask ? "red" :"purple"} text={showTask ? "Close Add Task Bar" :"Show Add Task Bar"} toggleShow={toggleShow} />
     </header>
   );
 };
