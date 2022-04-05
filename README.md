@@ -26,10 +26,81 @@
 
 $ git clone https://github.com/mslmyrtd/Task-Tracker-Rc-.git
 
-$ cd TAsk-Tracker-Rc
+$ cd Task-Tracker-Rc
 
 ```
 
 2. Install the app with the help of `package.json`:
 
 ```
+$ yarn install
+```
+
+or with npm
+
+```
+$npm i
+```
+
+3. Start the server :
+
+```
+$ yarn build
+$yarn start
+```
+
+    with npm
+
+```
+$ npm run build
+$npm run start
+```
+
+Default Express.js routes are start with /api
+Graphql routes starts with /graphql
+
+</details>
+
+<details><summary><b>Deployment </b></summary><br>
+
+Deployed at Heroku @ <br>
+Graphql queries can be done at @
+
+Check collection with Postman : <br>
+
+<p  align="left">
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/23b635b4e7b2192c870b)
+
+</p>
+</details>
+<details><summary><b>Testing </b></summary><br>
+
+After cloning the app and installation process please run :
+
+```
+$yarn test
+```
+
+</details>
+
+<details><summary><b>Other</b></summary><br>
+
+## Authors
+
+👤 Müslüm Yurtada
+
+- Github: [https://github.com/mslmyrtd)
+
+## How to contribute ?
+
+Contributions, issues and feature requests are welcome!
+Feel free to check issues page.
+
+Fork it (https://github.com/mslmyrtd/Task-Tracker-Rc-.git/fork) <br>
+Create your working branch (git checkout -b [choose-a-name]) <br>
+Commit your changes (git commit-m "commit") <br>
+Push to the branch (git push origin [chosen-name]) <br>
+Create a new Pull Request
+
+</details>
