@@ -13,7 +13,7 @@
 - #### React.js
 - #### React Toastify
 - #### React Icon
-- #### Bootsrap
+- #### Bootstrap
 
 
 <details><summary><b>Installation Instructions</b></summary><br>
